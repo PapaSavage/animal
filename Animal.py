@@ -1,10 +1,10 @@
 class Animal:
-    def __init__(self, name, species):
+    def init(self, name, age):
         self.name = name
-        self.species = species
+        self.age = age
 
     def make_sound(self):
-        raise NotImplementedError("Subclass must implement abstract method")
+        raise NotImplementedError("The make_sound method should be implemented in a subclass")
 
-    def __str__(self):
-        return f"{self.name} is a {self.species}"
+    def info(self):
+        return f"{self.name} — {self.age} years old"
